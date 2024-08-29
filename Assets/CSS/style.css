@@ -1,0 +1,91 @@
+.inicio {
+    display: flex; /* Define que a div 'inicio' será um contêiner flexível, organizando seus elementos filhos em uma única linha ou coluna */
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente no contêiner */
+    align-items: center; /* Centraliza os elementos filhos verticalmente no contêiner */
+    flex-direction: column; /* Organiza os elementos filhos em uma coluna (um abaixo do outro) */
+    max-width: 950px; /* Define a largura máxima da div 'inicio' como 950px */
+    width: 100%; /* Faz a div 'inicio' ocupar toda a largura possível até o limite de 950px */
+    margin: 0 auto; /* Centraliza a div 'inicio' horizontalmente no meio da página */
+    padding: 20px; /* Adiciona um espaçamento interno de 20px ao redor do conteúdo da div 'inicio' */
+    box-sizing: border-box; /* Inclui o padding na largura total da div, garantindo que a largura máxima não seja ultrapassada */
+}
+
+a.link1 {
+    color: red; /* Define a cor do texto do link como vermelho */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: 2em; /* Define o tamanho da fonte como 2em (em relação ao tamanho da fonte do elemento pai) */
+}
+
+a.linka2 {
+    color: black; /* Define a cor do texto do link como preto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: 2em; /* Define o tamanho da fonte como 2em */
+}
+
+.submsg p {
+    font-size: 1.5em; /* Define o tamanho da fonte do parágrafo dentro da div 'submsg' como 1.5em */
+}
+
+.img {
+    display: flex; /* Define que a div 'img' será um contêiner flexível */
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente no contêiner 'img' */
+    align-items: center; /* Centraliza os elementos filhos verticalmente no contêiner 'img' */
+    flex-direction: column; /* Organiza os elementos filhos dentro de 'img' em uma coluna */
+    width: 100%; /* Faz a div 'img' ocupar toda a largura disponível do contêiner pai */
+    text-align: center; /* Centraliza o texto dentro da div 'img' */
+}
+
+.img img {
+    display: block; /* Faz com que a imagem seja exibida como um bloco (removendo o comportamento inline) */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente dentro do contêiner pai */
+}
+
+.btn {
+    margin-top: 20px; /* Adiciona um espaçamento de 20px acima do botão */
+    padding: 10px 20px; /* Adiciona 10px de padding vertical e 20px de padding horizontal ao botão */
+    background-color: #007bff; /* Define a cor de fundo do botão como azul (código hexadecimal #007bff) */
+    color: white; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove qualquer borda ao redor do botão */
+    cursor: pointer; /* Muda o cursor para um ponteiro (mão) ao passar sobre o botão, indicando que é clicável */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    font-size: 1.5em; /* Define o tamanho da fonte dentro do botão como 1em */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Altera a cor de fundo do botão para um azul mais escuro ao passar o mouse sobre ele */
+}
+
+.text {
+    display: flex; /* caixa flexivel */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    flex-direction: column; /* deixa em coluna */
+    margin-top: 25px; /* Adiciona um espaçamento de 25px acima da div 'text' */
+    font-size: 1.5em; /* Define o tamanho da fonte dentro da div 'text' como 1.5em */
+    text-align: justify; /* Alinha o texto dentro da div 'text' para que ocupe toda a largura disponível, criando um efeito de justificação */
+}
+
+.text button {
+    font-size: 1.5em; /* Define o tamanho da fonte dentro da div 'text' como 1.5em */
+}
+
+.img-empresas {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px; /* adiciona um espaço do conteúdo acima */
+
+}
+
+.img-empresas a {
+    text-decoration: none;
+    color:  inherit;
+}
+
+.img-empresas p {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+
+}
