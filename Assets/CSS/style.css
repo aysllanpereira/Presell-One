@@ -1,91 +1,222 @@
 .inicio {
-    display: flex; /* Define que a div 'inicio' será um contêiner flexível, organizando seus elementos filhos em uma única linha ou coluna */
-    justify-content: center; /* Centraliza os elementos filhos horizontalmente no contêiner */
-    align-items: center; /* Centraliza os elementos filhos verticalmente no contêiner */
-    flex-direction: column; /* Organiza os elementos filhos em uma coluna (um abaixo do outro) */
-    max-width: 950px; /* Define a largura máxima da div 'inicio' como 950px */
-    width: 100%; /* Faz a div 'inicio' ocupar toda a largura possível até o limite de 950px */
-    margin: 0 auto; /* Centraliza a div 'inicio' horizontalmente no meio da página */
-    padding: 20px; /* Adiciona um espaçamento interno de 20px ao redor do conteúdo da div 'inicio' */
-    box-sizing: border-box; /* Inclui o padding na largura total da div, garantindo que a largura máxima não seja ultrapassada */
+    display: flex; /* Contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza em coluna */
+    max-width: 950px; /* Largura máxima */
+    width: 100%; /* Largura completa */
+    margin: 0 auto; /* Centraliza no meio */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding na largura total */
 }
 
 a.link1 {
-    color: red; /* Define a cor do texto do link como vermelho */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    font-size: 2em; /* Define o tamanho da fonte como 2em (em relação ao tamanho da fonte do elemento pai) */
+    color: red; /* Cor do link vermelho */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 2em; /* Tamanho da fonte */
+}
+
+a.link1:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 a.linka2 {
-    color: black; /* Define a cor do texto do link como preto */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    font-size: 2em; /* Define o tamanho da fonte como 2em */
+    color: black; /* Cor do link preto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 2em; /* Tamanho da fonte */
+}
+
+a.linka2:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
 }
 
 .submsg p {
-    font-size: 1.5em; /* Define o tamanho da fonte do parágrafo dentro da div 'submsg' como 1.5em */
+    font-size: 1.5em; /* Tamanho da fonte do parágrafo */
 }
 
 .img {
-    display: flex; /* Define que a div 'img' será um contêiner flexível */
-    justify-content: center; /* Centraliza os elementos filhos horizontalmente no contêiner 'img' */
-    align-items: center; /* Centraliza os elementos filhos verticalmente no contêiner 'img' */
-    flex-direction: column; /* Organiza os elementos filhos dentro de 'img' em uma coluna */
-    width: 100%; /* Faz a div 'img' ocupar toda a largura disponível do contêiner pai */
-    text-align: center; /* Centraliza o texto dentro da div 'img' */
+    display: flex; /* Contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza em coluna */
+    width: 100%; /* Largura completa */
+    text-align: center; /* Centraliza o texto */
 }
 
 .img img {
-    display: block; /* Faz com que a imagem seja exibida como um bloco (removendo o comportamento inline) */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente dentro do contêiner pai */
+    display: block; /* Exibe como bloco */
+    margin: 0 auto; /* Centraliza a imagem */
 }
 
 .btn {
-    margin-top: 20px; /* Adiciona um espaçamento de 20px acima do botão */
-    padding: 10px 20px; /* Adiciona 10px de padding vertical e 20px de padding horizontal ao botão */
-    background-color: #007bff; /* Define a cor de fundo do botão como azul (código hexadecimal #007bff) */
-    color: white; /* Define a cor do texto do botão como branco */
-    border: none; /* Remove qualquer borda ao redor do botão */
-    cursor: pointer; /* Muda o cursor para um ponteiro (mão) ao passar sobre o botão, indicando que é clicável */
-    text-align: center; /* Centraliza o texto dentro do botão */
-    font-size: 1.5em; /* Define o tamanho da fonte dentro do botão como 1em */
+    margin-top: 20px; /* Espaçamento superior */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.5em; /* Tamanho da fonte */
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Altera a cor de fundo do botão para um azul mais escuro ao passar o mouse sobre ele */
+    background-color: #0056b3; /* Fundo azul escuro no hover */
 }
 
 .text {
-    display: flex; /* caixa flexivel */
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center; /* centraliza verticalmente */
-    flex-direction: column; /* deixa em coluna */
-    margin-top: 25px; /* Adiciona um espaçamento de 25px acima da div 'text' */
-    font-size: 1.5em; /* Define o tamanho da fonte dentro da div 'text' como 1.5em */
-    text-align: justify; /* Alinha o texto dentro da div 'text' para que ocupe toda a largura disponível, criando um efeito de justificação */
+    display: flex; /* Contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza em coluna */
+    margin-top: 25px; /* Espaçamento superior */
+    font-size: 1.5em; /* Tamanho da fonte */
+    text-align: justify; /* Justifica o texto */
 }
 
 .text button {
-    font-size: 1.5em; /* Define o tamanho da fonte dentro da div 'text' como 1.5em */
+    font-size: 1.5em; /* Tamanho da fonte */
 }
 
 .img-empresas {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 25px; /* adiciona um espaço do conteúdo acima */
-
+    display: flex; /* Contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza em coluna */
+    margin-top: 25px; /* Espaçamento superior */
 }
 
 .img-empresas a {
-    text-decoration: none;
-    color:  inherit;
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Herda a cor */
 }
 
 .img-empresas p {
-    text-align: center;
-    margin: 10px 0 0 0;
-    font-size: 1.2em;
+    text-align: center; /* Centraliza o texto */
+    margin: 10px 0 0 0; /* Margem superior */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
 
+.text-2 {
+    display: flex; /* Contêiner flexível */
+    margin-top: 25px; /* Espaçamento superior */
+}
+
+.text-2 ol {
+    flex: 2; /* Cresce para ocupar espaço */
+    margin: 0; /* Remove margem */
+    padding: 0; /* Remove padding */
+    list-style-position: inside; /* Alinhamento da lista */
+}
+
+.text-2 ol:first-of-type {
+    columns: 2; /* Colunas duplas */
+}
+
+.text-2 ol li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: black; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte */
+    padding: 5px; /* Espaçamento interno */
+}
+
+.text-2 ol li a:hover {
+    text-decoration: underline; /* Sublinha no hover */
+    text-decoration-color: black; /* Cor da linha preta */
+}
+
+footer {
+    margin-top: 35px; /* Espaçamento superior */
+    background-color: #ABABAB; /* Cor de fundo */
+    height: 500px; /* Altura do footer */
+    display: flex; /* Contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza em coluna */
+    text-align: center; /* Centraliza o texto */
+}
+
+.text-line {
+    display: flex; /* Contêiner flexível */
+    justify-content: space-around; /* Espaço igual entre itens */
+    max-width: 950px; /* Largura máxima */
+    width: 100%; /* Largura completa */
+}
+
+.text-line p {
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 1.2em;
+}
+
+.text-line p a {
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do link branco */
+}
+
+.text-line p a:hover {
+    text-decoration: underline; /* Sublinha no hover */
+    text-decoration-color: white; /* Cor da linha branca */
+}
+
+.text-content {
+    max-width: 950px; /* Largura máxima */
+    width: 100%; /* Largura completa */
+    margin-top: 40px; /* Espaçamento superior */
+    color: white;
+}
+
+.text-content p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Estilos para tablet */
+@media (max-width: 768px) {
+    .inicio {
+        padding: 15px; /* Reduz o padding */
+    }
+
+    a.link1, a.linka2 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte */
+    }
+
+    .img-emp {
+        width: 680px;
+    }
+
+    .submsg p, .text, .img-empresas p, .text-2 ol li a, .text-line p, .text-content p {
+        font-size: 1.3em; /* Reduz o tamanho da fonte */
+    }
+
+    .btn {
+        font-size: 1.3em; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+/* Estilos para celular */
+@media (max-width: 480px) {
+    .inicio {
+        padding: 10px; /* Reduz o padding */
+    }
+
+    a.link1, a.linka2 {
+        font-size: 1.2em; /* Reduz o tamanho da fonte */
+    }
+
+    .img-emp {
+        width: 380px;
+    }
+
+    .text-line {
+        flex-direction: column;
+    }
+
+    .submsg p, .text, .img-empresas p, .text-2 ol li a, .text-line p, .text-content p {
+        font-size: 13px; /* Reduz o tamanho da fonte */
+    }
+
+    .btn {
+        font-size: 1.2em; /* Reduz o tamanho da fonte do botão */
+    }
 }
