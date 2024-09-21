@@ -1,3 +1,5 @@
+
+
 .inicio {
     display: flex; /* Contêiner flexível */
     justify-content: center; /* Centraliza horizontalmente */
@@ -10,44 +12,82 @@
     box-sizing: border-box; /* Inclui padding na largura total */
 }
 
-a.link1 {
+.inicio h1 {
+    font-size: 2.5em;
+}
+
+a.seconds {
     color: red; /* Cor do link vermelho */
-    text-decoration: none; /* Remove sublinhado */
-    font-size: 2em; /* Tamanho da fonte */
 }
 
-a.link1:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
+.img-descrition {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-a.linka2 {
-    color: black; /* Cor do link preto */
-    text-decoration: none; /* Remove sublinhado */
-    font-size: 2em; /* Tamanho da fonte */
+.img-midia, .text-descrition {
+    flex: 1;
+    padding: 20px;
 }
 
-a.linka2:hover {
-    text-decoration: underline;
-    text-decoration-color: black;
+.text-descrition p {
+    font-size: 15px;
 }
 
-.submsg p {
-    font-size: 1.5em; /* Tamanho da fonte do parágrafo */
+.img-midia img {
+    width: 100%;
+    height: auto;
 }
 
-.img {
-    display: flex; /* Contêiner flexível */
+hr {
+    width: 50%;
+    height: 2px; /* Altura da linha */
+    background-color: #000; /* Cor da linha */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+.midea {
+    display: flex; /* Usando flexbox para o contêiner do vídeo */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    flex-direction: column; /* Organiza em coluna */
-    width: 100%; /* Largura completa */
-    text-align: center; /* Centraliza o texto */
+    position: relative; /* Necessário para a posição absoluta do play-btn */
+    margin-top: 50px;
 }
 
-.img img {
-    display: block; /* Exibe como bloco */
-    margin: 0 auto; /* Centraliza a imagem */
+.midea img {
+    width: 100%; /* Defina a largura desejada */
+    height: 500px; /* Defina uma altura visível */
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 3em;
+    color: white;
+}
+
+.play-btn img {
+    width: 300px;
+    height: 270px;
+}
+
+.coments {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.img-comentarios img {
+    padding: 15px;
+}
+
+.text .negrito {
+    font-weight: bold;
 }
 
 .btn {
@@ -65,7 +105,7 @@ a.linka2:hover {
     background-color: #0056b3; /* Fundo azul escuro no hover */
 }
 
-.text {
+.text-descrition {
     display: flex; /* Contêiner flexível */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
