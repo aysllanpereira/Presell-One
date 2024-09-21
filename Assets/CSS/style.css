@@ -1,262 +1,187 @@
-
-
 .inicio {
-    display: flex; /* Contêiner flexível */
+    display: flex; /* Layout flexível */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     flex-direction: column; /* Organiza em coluna */
     max-width: 950px; /* Largura máxima */
-    width: 100%; /* Largura completa */
-    margin: 0 auto; /* Centraliza no meio */
+    width: 100%; /* Largura total */
+    margin: 0 auto; /* Centraliza na página */
     padding: 20px; /* Espaçamento interno */
-    box-sizing: border-box; /* Inclui padding na largura total */
+    box-sizing: border-box; /* Inclui padding na largura */
 }
 
 .inicio h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Tamanho grande do título */
 }
 
 a.seconds {
-    color: red; /* Cor do link vermelho */
+    color: red; /* Link em vermelho */
 }
 
 .img-descrition {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    display: flex; /* Layout flexível para imagens e texto */
+    justify-content: space-around; /* Espaçamento uniforme */
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 .img-midia, .text-descrition {
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Ocupa o mesmo espaço */
+    padding: 20px; /* Espaçamento interno */
 }
 
 .text-descrition p {
-    font-size: 15px;
+    font-size: 15px; /* Tamanho da fonte do texto */
 }
 
 .img-midia img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Imagem em largura total */
+    height: auto; /* Altura automática */
 }
 
 hr {
-    width: 50%;
+    width: 50%; /* Largura da linha */
     height: 2px; /* Altura da linha */
     background-color: #000; /* Cor da linha */
-    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+    margin: 20px 0; /* Espaçamento ao redor */
 }
 
 .midea {
-    display: flex; /* Usando flexbox para o contêiner do vídeo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    position: relative; /* Necessário para a posição absoluta do play-btn */
-    margin-top: 50px;
+    display: flex; /* Layout flexível para vídeo */
+    justify-content: center; /* Centraliza o vídeo */
+    align-items: center; /* Centraliza o conteúdo */
+    position: relative; /* Necessário para o botão de play */
+    margin-top: 50px; /* Espaçamento superior */
 }
 
 .midea img {
-    width: 100%; /* Defina a largura desejada */
-    height: 500px; /* Defina uma altura visível */
+    width: 100%; /* Largura total da imagem */
+    height: 500px; /* Altura fixa */
 }
 
 .play-btn {
-    position: absolute;
-    top: 50%;
+    position: absolute; /* Botão no centro do vídeo */
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 3em;
-    color: white;
 }
 
 .play-btn img {
-    width: 300px;
+    width: 300px; /* Tamanho do botão */
     height: 270px;
 }
 
 .coments {
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 50px; /* Espaçamento superior */
+    margin-left: 50px; /* Espaçamento à esquerda */
 }
 
 .img-comentarios img {
-    padding: 15px;
-}
-
-.text .negrito {
-    font-weight: bold;
+    padding: 15px; /* Espaçamento interno das imagens */
 }
 
 .btn {
-    margin-top: 20px; /* Espaçamento superior */
-    padding: 10px 20px; /* Espaçamento interno */
+    margin-top: 50px; /* Espaçamento superior */
+    padding: 10px 20px; /* Espaçamento interno do botão */
     background-color: #007bff; /* Cor de fundo azul */
-    color: white; /* Cor do texto branco */
+    color: white; /* Texto branco */
     border: none; /* Remove borda */
     cursor: pointer; /* Cursor de ponteiro */
-    text-align: center; /* Centraliza o texto */
-    font-size: 1.5em; /* Tamanho da fonte */
+    text-align: center; /* Centraliza texto */
+    font-size: 1.5em; /* Tamanho do texto */
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Fundo azul escuro no hover */
+    background-color: #0056b3; /* Fundo azul escuro ao passar o mouse */
 }
 
 .text-descrition {
-    display: flex; /* Contêiner flexível */
+    display: flex; /* Layout flexível para o texto */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     flex-direction: column; /* Organiza em coluna */
     margin-top: 25px; /* Espaçamento superior */
-    font-size: 1.5em; /* Tamanho da fonte */
+    font-size: 1.5em; /* Tamanho do texto */
     text-align: justify; /* Justifica o texto */
-}
-
-.text button {
-    font-size: 1.5em; /* Tamanho da fonte */
-}
-
-.img-empresas {
-    display: flex; /* Contêiner flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex-direction: column; /* Organiza em coluna */
-    margin-top: 25px; /* Espaçamento superior */
-}
-
-.img-empresas a {
-    text-decoration: none; /* Remove sublinhado */
-    color: inherit; /* Herda a cor */
-}
-
-.img-empresas p {
-    text-align: center; /* Centraliza o texto */
-    margin: 10px 0 0 0; /* Margem superior */
-    font-size: 1.2em; /* Tamanho da fonte */
-}
-
-.text-2 {
-    display: flex; /* Contêiner flexível */
-    margin-top: 25px; /* Espaçamento superior */
-}
-
-.text-2 ol {
-    flex: 2; /* Cresce para ocupar espaço */
-    margin: 0; /* Remove margem */
-    padding: 0; /* Remove padding */
-    list-style-position: inside; /* Alinhamento da lista */
-}
-
-.text-2 ol:first-of-type {
-    columns: 2; /* Colunas duplas */
-}
-
-.text-2 ol li a {
-    text-decoration: none; /* Remove sublinhado */
-    color: black; /* Cor do texto */
-    font-size: 1.2em; /* Tamanho da fonte */
-    padding: 5px; /* Espaçamento interno */
-}
-
-.text-2 ol li a:hover {
-    text-decoration: underline; /* Sublinha no hover */
-    text-decoration-color: black; /* Cor da linha preta */
 }
 
 footer {
     margin-top: 35px; /* Espaçamento superior */
-    background-color: #ABABAB; /* Cor de fundo */
-    height: 500px; /* Altura do footer */
-    display: flex; /* Contêiner flexível */
+    background-color: #ABABAB; /* Fundo cinza */
+    width: 100%; /* Largura total */
+    height: 300px; /* Altura fixa */
+    display: flex; /* Layout flexível */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     flex-direction: column; /* Organiza em coluna */
     text-align: center; /* Centraliza o texto */
 }
 
-.text-line {
-    display: flex; /* Contêiner flexível */
-    justify-content: space-around; /* Espaço igual entre itens */
-    max-width: 950px; /* Largura máxima */
-    width: 100%; /* Largura completa */
-}
-
-.text-line p {
-    align-items: center; /* Centraliza verticalmente */
-    font-size: 1.2em;
-}
-
-.text-line p a {
-    text-decoration: none; /* Remove sublinhado */
-    color: white; /* Cor do link branco */
-}
-
-.text-line p a:hover {
-    text-decoration: underline; /* Sublinha no hover */
-    text-decoration-color: white; /* Cor da linha branca */
-}
-
 .text-content {
     max-width: 950px; /* Largura máxima */
-    width: 100%; /* Largura completa */
+    width: 100%; /* Largura total */
     margin-top: 40px; /* Espaçamento superior */
-    color: white;
+    color: white; /* Texto branco */
 }
 
 .text-content p {
-    margin: 0;
-    font-size: 1.2em;
+    margin: 0; /* Remove margens */
+    font-size: 1.2em; /* Tamanho da fonte */
 }
 
-/* Estilos para tablet */
+/* Estilos para tablets */
 @media (max-width: 768px) {
     .inicio {
         padding: 15px; /* Reduz o padding */
     }
 
     a.link1, a.linka2 {
-        font-size: 1.5em; /* Reduz o tamanho da fonte */
+        font-size: 1.5em; /* Tamanho do link */
     }
 
     .img-emp {
-        width: 680px;
+        width: 680px; /* Reduz a largura das imagens */
     }
 
-    .submsg p, .text, .img-empresas p, .text-2 ol li a, .text-line p, .text-content p {
-        font-size: 1.3em; /* Reduz o tamanho da fonte */
+    .submsg p, .text, .img-empresas p, .text-2 ol li a, .text-content p {
+        font-size: 1.3em; /* Reduz tamanho do texto */
     }
 
     .btn {
-        font-size: 1.3em; /* Reduz o tamanho da fonte do botão */
+        font-size: 1.3em; /* Tamanho do botão */
     }
 }
 
-/* Estilos para celular */
+/* Estilos para celulares */
 @media (max-width: 480px) {
     .inicio {
         padding: 10px; /* Reduz o padding */
     }
 
+    .img-descrition {
+        display: flex; /* Layout flexível */
+        flex-direction: column; /* Layout em coluna */
+    }
+
+    .img-midia, .text-descrition {
+        margin-top: -10%;
+    }
+
     a.link1, a.linka2 {
-        font-size: 1.2em; /* Reduz o tamanho da fonte */
+        font-size: 1.2em; /* Tamanho do link */
     }
 
     .img-emp {
-        width: 380px;
+        width: 380px; /* Largura reduzida da imagem */
     }
 
-    .text-line {
-        flex-direction: column;
-    }
-
-    .submsg p, .text, .img-empresas p, .text-2 ol li a, .text-line p, .text-content p {
+    .submsg p, .text, .img-empresas p, .text-content p {
         font-size: 13px; /* Reduz o tamanho da fonte */
     }
 
     .btn {
-        font-size: 1.2em; /* Reduz o tamanho da fonte do botão */
+        font-size: 1.2em; /* Reduz o tamanho do botão */
     }
 }
