@@ -16,6 +16,7 @@
 
 a.seconds {
     color: red; /* Link em vermelho */
+    text-decoration: none;
 }
 
 .img-descrition {
